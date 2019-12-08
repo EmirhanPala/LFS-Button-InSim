@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>InSimDotNet</id>
+    <version>2.3.0</version>
+    <title>InSim.NET</title>
+    <authors>Alex McBride</authors>
+    <owners>Alex McBride</owners>
+    <licenseUrl>https://www.gnu.org/licenses/lgpl-2.1.html</licenseUrl>
+    <projectUrl>https://github.com/alexmcbride/insimdotnet</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>.NET InSim library for the online racing simulator Live for Speed</description>
+    <summary>.NET InSim library for the online racing simulator Live for Speed</summary>
+    <releaseNotes>* Updated for LFS 0.6M - a very large number of new packets and changes (see lfs\docs\insim.txt for details)
+* Library now uses InSim version 7
+* InSim object no longer throws ObjectDisposed exception when being reused to connect to LFS
+* Fixed encoding issue that occasionally caused garbled strings to be sent to LFS
+* Changed InSim.Send(IEnumerable&lt;ISendable&gt;) method to InSim.Send(params ISendable[]) which provides better syntax
+* Fixed missing VIEW_ANOTHER identifier to ViewIdentifiers
+* Added new StringHelpers: StripLanguage(string), Strip(string), Unescape(string), and Escape(string)
+* Added Rockingham to TrackHelper</releaseNotes>
+    <copyright>Copyright © Alex McBride 2010 - 2016</copyright>
+    <tags>.NET LFS InSim</tags>
+  </metadata>
+</package>
